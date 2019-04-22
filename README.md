@@ -16,7 +16,7 @@
     |   |_ __init__.py
     |   |_ echo.py
     |_ __init__.py
-    |_ __main__.py
+    |_ test.py
     |_ test.yaml
 ```
 
@@ -60,7 +60,7 @@ class Echo(YAMLExpression):
     depends_on: []
 ```
 
-## In your **\_\_main\_\_.py** import **protolingo** and bootstrap your environment
+## In your **test.py** import **protolingo** and bootstrap your environment
 ```python
 import sys
 from protolingo import __main__ as module
@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
 ## Run the following command to test your work
 ```bash
-$ python test.py foo.yaml -params '{"demo":"Hello world"}'
+$ python test.py test.yaml -params '{"demo":"Hello world"}'
 ********************************************************
 *                this_id_must_be_unique
 ********************************************************
