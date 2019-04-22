@@ -1,6 +1,6 @@
 # **Protolingo**
 
-## **Protolingo** is a powerful framework for creating custom configuration DSL(s) with YAML.
+## **Protolingo** is a powerful meta-language framework for creating custom configuration DSL(s) with YAML.
 
 > ## With Protolingo your custom DSL will support:
 > 1. **Custom tags**
