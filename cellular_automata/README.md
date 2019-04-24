@@ -1,7 +1,7 @@
 # Cellular Automata
 
 This demonstrates the flexibility of **protolingo** by using it to generate a configuration based [cellular automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html)
-With this yaml configuration you can experiment with cellular automata without writing code. By just changing the configuration you can generate any elementary cellular automoton.
+With this yaml configuration you can experiment with cellular automata without writing code. By just changing the configuration you can generate any elementary cellular automaton.
 
 
 ```bash
