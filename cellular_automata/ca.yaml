@@ -1,0 +1,488 @@
+-   config:
+      exit_on_error : false
+      chars : [' ', '#']
+      rules : [0,1,0,1,1,0,1,0]
+      generations : 50
+
+-   !machine:
+    id: Cellular Automaton
+    depends_on: []
+    registers:
+
+    - !register
+      id: r0
+      bit: 0
+      neighborhood: [r79,r1]
+      depends_on: [r0]
+
+    - !register
+      id: r1
+      bit: 0
+      neighborhood: [r0,r2]
+      depends_on: [r0]
+
+    - !register
+      id: r2
+      bit: 0
+      neighborhood: [r1,r3]
+      depends_on: [r1]
+
+    - !register
+      id: r3
+      bit: 0
+      neighborhood: [r2,r4]
+      depends_on: [r2]
+
+    - !register
+      id: r4
+      bit: 0
+      neighborhood: [r3,r5]
+      depends_on: [r3]
+
+    - !register
+      id: r5
+      bit: 0
+      neighborhood: [r4,r6]
+      depends_on: [r4]
+
+    - !register
+      id: r6
+      bit: 0
+      neighborhood: [r5,r7]
+      depends_on: [r5]
+
+    - !register
+      id: r7
+      bit: 0
+      neighborhood: [r6,r8]
+      depends_on: [r6]
+
+    - !register
+      id: r8
+      bit: 0
+      neighborhood: [r7,r9]
+      depends_on: [r7]
+
+    - !register
+      id: r9
+      bit: 0
+      neighborhood: [r8,r10]
+      depends_on: [r8]
+
+    - !register
+      id: r10
+      bit: 0
+      neighborhood: [r9,r11]
+      depends_on: [r9]
+
+    - !register
+      id: r11
+      bit: 0
+      neighborhood: [r10,r12]
+      depends_on: [r10]
+
+    - !register
+      id: r12
+      bit: 0
+      neighborhood: [r11,r13]
+      depends_on: [r11]
+
+    - !register
+      id: r13
+      bit: 0
+      neighborhood: [r12,r14]
+      depends_on: [r12]
+
+    - !register
+      id: r14
+      bit: 0
+      neighborhood: [r13,r15]
+      depends_on: [r13]
+
+    - !register
+      id: r15
+      bit: 0
+      neighborhood: [r14,r16]
+      depends_on: [r14]
+
+    - !register
+      id: r16
+      bit: 0
+      neighborhood: [r15,r17]
+      depends_on: [r15]
+
+    - !register
+      id: r17
+      bit: 0
+      neighborhood: [r16,r18]
+      depends_on: [r16]
+
+    - !register
+      id: r18
+      bit: 0
+      neighborhood: [r17,r19]
+      depends_on: [r17]
+
+    - !register
+      id: r19
+      bit: 0
+      neighborhood: [r18,r20]
+      depends_on: [r18]
+
+    - !register
+      id: r20
+      bit: 0
+      neighborhood: [r19,r21]
+      depends_on: [r19]
+
+    - !register
+      id: r21
+      bit: 0
+      neighborhood: [r20,r22]
+      depends_on: [r20]
+
+    - !register
+      id: r22
+      bit: 0
+      neighborhood: [r21,r23]
+      depends_on: [r21]
+
+    - !register
+      id: r23
+      bit: 0
+      neighborhood: [r22,r24]
+      depends_on: [r22]
+
+    - !register
+      id: r24
+      bit: 0
+      neighborhood: [r23,r25]
+      depends_on: [r23]
+
+    - !register
+      id: r25
+      bit: 0
+      neighborhood: [r24,r26]
+      depends_on: [r24]
+
+    - !register
+      id: r26
+      bit: 0
+      neighborhood: [r25,r27]
+      depends_on: [r25]
+
+    - !register
+      id: r27
+      bit: 0
+      neighborhood: [r26,r28]
+      depends_on: [r26]
+
+    - !register
+      id: r28
+      bit: 0
+      neighborhood: [r27,r29]
+      depends_on: [r27]
+
+    - !register
+      id: r29
+      bit: 0
+      neighborhood: [r28,r30]
+      depends_on: [r28]
+
+    - !register
+      id: r30
+      bit: 0
+      neighborhood: [r29,r31]
+      depends_on: [r29]
+
+    - !register
+      id: r31
+      bit: 0
+      neighborhood: [r30,r32]
+      depends_on: [r30]
+
+    - !register
+      id: r32
+      bit: 0
+      neighborhood: [r31,r33]
+      depends_on: [r31]
+
+    - !register
+      id: r33
+      bit: 0
+      neighborhood: [r32,r34]
+      depends_on: [r32]
+
+    - !register
+      id: r34
+      bit: 0
+      neighborhood: [r33,r35]
+      depends_on: [r33]
+
+    - !register
+      id: r35
+      bit: 0
+      neighborhood: [r34,r36]
+      depends_on: [r34]
+
+    - !register
+      id: r36
+      bit: 0
+      neighborhood: [r35,r37]
+      depends_on: [r35]
+
+    - !register
+      id: r37
+      bit: 0
+      neighborhood: [r36,r38]
+      depends_on: [r36]
+
+    - !register
+      id: r38
+      bit: 0
+      neighborhood: [r37,r39]
+      depends_on: [r37]
+
+    - !register
+      id: r39
+      bit: 0
+      neighborhood: [r38,r40]
+      depends_on: [r38]
+
+    - !register
+      id: r40
+      bit: 1
+      neighborhood: [r39,r41]
+      depends_on: [r39]
+    - !register
+      id: r41
+      bit: 0
+      neighborhood: [r40,r42]
+      depends_on: [r40]
+    - !register
+      id: r42
+      bit: 0
+      neighborhood: [r41,r43]
+      depends_on: [r41]
+
+    - !register
+      id: r43
+      bit: 0
+      neighborhood: [r42,r44]
+      depends_on: [r42]
+
+    - !register
+      id: r44
+      bit: 0
+      neighborhood: [r43,r45]
+      depends_on: [r43]
+
+    - !register
+      id: r45
+      bit: 0
+      neighborhood: [r44,r46]
+      depends_on: [r44]
+
+    - !register
+      id: r46
+      bit: 0
+      neighborhood: [r45,r47]
+      depends_on: [r45]
+
+    - !register
+      id: r47
+      bit: 0
+      neighborhood: [r46,r48]
+      depends_on: [r46]
+
+    - !register
+      id: r48
+      bit: 0
+      neighborhood: [r47,r49]
+      depends_on: [r47]
+
+    - !register
+      id: r49
+      bit: 0
+      neighborhood: [r48,r50]
+      depends_on: [r48]
+
+    - !register
+      id: r50
+      bit: 0
+      neighborhood: [r49,r51]
+      depends_on: [r49]
+
+    - !register
+      id: r51
+      bit: 0
+      neighborhood: [r50,r52]
+      depends_on: [r50]
+
+    - !register
+      id: r52
+      bit: 0
+      neighborhood: [r51,r53]
+      depends_on: [r51]
+
+    - !register
+      id: r53
+      bit: 0
+      neighborhood: [r52,r54]
+      depends_on: [r52]
+
+    - !register
+      id: r54
+      bit: 0
+      neighborhood: [r53,r55]
+      depends_on: [r53]
+
+    - !register
+      id: r55
+      bit: 0
+      neighborhood: [r54,r56]
+      depends_on: [r54]
+
+    - !register
+      id: r56
+      bit: 0
+      neighborhood: [r55,r57]
+      depends_on: [r55]
+
+    - !register
+      id: r57
+      bit: 0
+      neighborhood: [r56,r58]
+      depends_on: [r56]
+
+    - !register
+      id: r58
+      bit: 0
+      neighborhood: [r57,r59]
+      depends_on: [r57]
+
+    - !register
+      id: r59
+      bit: 0
+      neighborhood: [r58,r60]
+      depends_on: [r58]
+
+    - !register
+      id: r60
+      bit: 0
+      neighborhood: [r59,r61]
+      depends_on: [r59]
+
+    - !register
+      id: r61
+      bit: 0
+      neighborhood: [r60,r62]
+      depends_on: [r60]
+
+    - !register
+      id: r62
+      bit: 0
+      neighborhood: [r61,r63]
+      depends_on: [r61]
+
+    - !register
+      id: r63
+      bit: 0
+      neighborhood: [r62,r64]
+      depends_on: [r62]
+
+    - !register
+      id: r64
+      bit: 0
+      neighborhood: [r63,r65]
+      depends_on: [r63]
+
+    - !register
+      id: r65
+      bit: 0
+      neighborhood: [r64,r66]
+      depends_on: [r64]
+
+    - !register
+      id: r66
+      bit: 0
+      neighborhood: [r65,r67]
+      depends_on: [r65]
+
+    - !register
+      id: r67
+      bit: 0
+      neighborhood: [r66,r68]
+      depends_on: [r66]
+
+    - !register
+      id: r68
+      bit: 0
+      neighborhood: [r67,r69]
+      depends_on: [r67]
+
+    - !register
+      id: r69
+      bit: 0
+      neighborhood: [r68,r70]
+      depends_on: [r68]
+
+    - !register
+      id: r70
+      bit: 0
+      neighborhood: [r69,r71]
+      depends_on: [r69]
+
+    - !register
+      id: r71
+      bit: 0
+      neighborhood: [r70,r72]
+      depends_on: [r70]
+
+    - !register
+      id: r72
+      bit: 0
+      neighborhood: [r71,r73]
+      depends_on: [r71]
+
+    - !register
+      id: r73
+      bit: 0
+      neighborhood: [r72,r74]
+      depends_on: [r72]
+
+    - !register
+      id: r74
+      bit: 0
+      neighborhood: [r73,r75]
+      depends_on: [r73]
+
+    - !register
+      id: r75
+      bit: 0
+      neighborhood: [r74,r76]
+      depends_on: [r74]
+
+    - !register
+      id: r76
+      bit: 0
+      neighborhood: [r75,r77]
+      depends_on: [r75]
+
+    - !register
+      id: r77
+      bit: 0
+      neighborhood: [r76,r78]
+      depends_on: [r76]
+
+    - !register
+      id: r78
+      bit: 0
+      neighborhood: [r77,r79]
+      depends_on: [r77]
+
+    - !register
+      id: r79
+      bit: 0
+      neighborhood: [r78,r0]
+      depends_on: [r78]
