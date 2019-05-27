@@ -36,7 +36,7 @@ from protolingo.yaml.YAMLExpression import YAMLExpression
 class Echo(YAMLExpression):
     yaml_tag = u'!echo'
 
-    def __init__(self, id, depends_on, message, output=None, exit=None, exitCode=None):
+    def __init__(self, id, depends_on, message, output=None, exit=None, exitCode=None, **kwargs):
         super(YAMLExpression, self).__init__(id, depends_on, output, exit, exitCode)
         self.message = message
         

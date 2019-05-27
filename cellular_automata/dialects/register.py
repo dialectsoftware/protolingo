@@ -18,7 +18,7 @@ from protolingo.yaml.YAMLExpression import YAMLExpression
 class Register(YAMLExpression):
     yaml_tag = u'!register'
     
-    def __init__(self, id, depends_on, bit=None, neighborhood=None, output=None, exit=None, exitCode=None):
+    def __init__(self, id, depends_on, bit=None, neighborhood=None, output=None, exit=None, exitCode=None, **kwargs):
         super(Register, self).__init__(id, depends_on, output, exit, exitCode)
         if bit is None:
             self.bit = random.getrandbits(1)

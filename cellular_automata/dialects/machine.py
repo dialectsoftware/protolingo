@@ -18,7 +18,7 @@ from protolingo.yaml.YAMLExpression import YAMLExpression
 
 class Machine(YAMLExpression):
     yaml_tag = u'!machine'
-    def __init__(self, id, depends_on, registers, output=None, exit=None, exitCode=None):
+    def __init__(self, id, depends_on, registers, output=None, exit=None, exitCode=None, **kwargs):
         super(Machine, self).__init__(id, depends_on, output, exit, exitCode)
         self.registers = registers
         
